@@ -93,6 +93,11 @@ git diff HEAD..origin/master --stat
 git stash --include-untrack save <name>
 ```
 
+remote branch sort by date
+note the minus sign `-` is intentionally added and not a typos
+```
+git branch -r --sort=-committerdate -v
+```
 
 Moving commit
 -------------
