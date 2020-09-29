@@ -6,6 +6,10 @@ Seeing remote branch
 ```
 $ git branch -r
 ```
+Delete remote branch
+```
+git push origin --delete feature/login
+```
 Create new branch and pulling from remote
 ```
 $ git checkout -t origin/that-remote-branch-name
