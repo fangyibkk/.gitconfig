@@ -137,7 +137,10 @@ clone `my-source` and rename to `my-source-copy`
 ```
 git clone ../my-source my-source-copy
 ```
-# Why you might want this?
+Note `--bare` is a bare repository it stored git in the single file with extenstion `repos-name.git` \
+This work like the remote repos. \
+The normal 'working' repos has `.git` folder and store changes and checked out copies
+## Why you might want this?
 because you care about `.gitignore`
 
 ## No SSL common for development env
