@@ -118,3 +118,27 @@ git reset --keep HEAD~3
 git checkout -t -b newbranch
 git cherry-pick ..HEAD@{2}
 ```
+
+## Pushing to different branch
+pushing to `other-remote` repos from local branch `dev` to remote branch `outsource`
+```
+git push other-remote dev:outsource
+```
+
+## Copying with git
+```
+git init --bare ~/repos/my-target.git
+cd to/my-source
+git remote add my-target /absolute/path/to/my-target.git
+git push my-target from-branch:to-branch
+```
+Or simple 
+clone `my-source` and rename to `my-source-copy`
+```
+git clone ../my-source my-source-copy
+```
+
+## No SSL common for development env
+```
+git config http.sslVerify "false"
+```
