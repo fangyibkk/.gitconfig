@@ -137,6 +137,8 @@ clone `my-source` and rename to `my-source-copy`
 ```
 git clone ../my-source my-source-copy
 ```
+# Why you might want this?
+because you care about `.gitignore`
 
 ## No SSL common for development env
 ```
