@@ -86,6 +86,15 @@ change `tree/master` to `trunk` , and checkout=clone in svn
 $ svn checkout https://github.com/opencv/opencv/trunk/samples/data
 ```
 
+# Alternative sparse checkout
+require git > 2.25
+```
+git clone --depth 1 --no-checkout <repos_url> <directory>
+git sparse-checkout init --cone
+git sparse-checkout set path/to/that/directory
+// No need to run pull. Already pull when set path.
+```
+
 # check remote branch
 ```
 git remote add origin <remote reference>
