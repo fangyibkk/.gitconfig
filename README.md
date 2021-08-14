@@ -81,7 +81,7 @@ svn cannot have access to tree locally without tool like svk
 There is a bridge that developers use git to push to centralize SVN repo
 
 e.g. To download https://github.com/opencv/opencv/tree/master/samples/data
-change tree/master to trunk , and checkout=clone in svn
+change `tree/master` to `trunk` , and checkout=clone in svn
 ```
 $ svn checkout https://github.com/opencv/opencv/trunk/samples/data
 ```
